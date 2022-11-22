@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="styles.css" />
+    
     <title>Weather Dashboard</title>
   </head>
 
@@ -15,11 +15,11 @@
 
     <div>
       <aside>
-        <h2>Search by City:</h2>
+        <h2>Search City:</h2>
         <form id="searchForm">
-          <input type="text" id="searchInput" placeholder="Austin" aria-controls="today future"/>
+          <input type="text" id="searchInput" aria-controls="today future"/>
           <div>
-            <button type="submit" class="btn">Search</button>
+            <a id="searchBtn" class="btn">Search</a>
           </div>
         </form>
         <div id="history"></div>
