@@ -9,6 +9,20 @@ var ApiKey = "09878fa39ce4cbfcc644551af0fcc59c"
 
 function InputSearch() {
   var search = searchInput.value;
+
+  // pop search history in UI
+  let searchHistory = JSON.parse(localStorage.getItem('storeSearch')) || [];
+  searchHistory.forEach(city => {
+    document.querySelector('#history').innerHTML += `${city}`
+  });
+
+  // event to call search history back
+
+  // setup local storage
+  let storeSearch = JSON.parse(localStorage.getItem('storeSearch')) || [];
+  storeSearch.push(search);
+  localStorage.setItem('storeSearch', JSON.stringify(storeSearch))
+
   console.log(search)
 
   axios.get(`${weatherApi}/data/2.5/forecast?q=${search}&units=imperial&appid=${ApiKey}`)
