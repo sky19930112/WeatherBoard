@@ -23,8 +23,8 @@ Future day result will display:
 - API
 
 
-live site[](https://sky19930112.github.io/WeatherBoard/)
+live site: https://sky19930112.github.io/WeatherBoard
 
 
 
-![](.\p1.jpg)
+![](./p1.jpg)
