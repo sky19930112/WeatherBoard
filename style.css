@@ -1,0 +1,16 @@
+.btn {
+    background-color: yellow;
+    color: blue
+}
+
+.history {
+    background-color: rgb(187, 187, 255);
+}
+
+.today {
+    background-color: rgb(164, 255, 164);
+}
+
+.future {
+    background-color: rgb(255, 152, 152);
+}
